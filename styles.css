@@ -1,47 +1,52 @@
-/* styles.css */
+
 body, html {
   height: 100%;
   margin: 0;
 }
 
 body {
-  background: url('imagenes/suplementos-alimenticios-principal.jpg') no-repeat center center fixed; /* Imagen de fondo */
-  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background: url('imagenes/suplementos-alimenticios-principal.jpg') no-repeat center center fixed; 
+  background-size: cover; 
 }
 
 #app {
-  position: relative; /* Asegura que el contenido esté por encima de la imagen */
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para el contenido */
-  border-radius: 0.5rem; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 0.5rem; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  color: #000dff; /* Color azul para el título */
+  color: #000dff; 
 }
 
 .product-card {
-  background-color: #16d4de; /* Color de fondo de las tarjetas */
-  border: 1px solid #16d4de; /* Borde de las tarjetas */
-  border-radius: 0.5rem; /* Esquinas redondeadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de las tarjetas */
+  background-color: #16d4de; 
+  border: 1px solid #16d4de; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .totals {
-  background-color: #f5f3bc; /* Fondo verde claro */
-  padding: 10px; /* Espaciado interno */
-  border-radius: 0.5rem; /* Esquinas redondeadas */
-  margin-top: 20px; /* Margen superior */
-  font-weight: bold; /* Negrita */
+  background-color: #f5f3bc; 
+  padding: 10px; 
+  border-radius: 0.5rem; 
+  margin-top: 20px; 
+  font-weight: bold; 
 }
 
 .btn-primary {
-  background-color: #347124; /* Color del botón */
-  border-color: #f4eb4c; /* Color del borde */
+  background-color: #347124; 
+  border-color: #f4eb4c; 
 }
 
 .btn-primary:hover {
-  background-color: #0056b3; /* Color al pasar el mouse */
-  border-color: #004085; /* Color del borde al pasar el mouse */
+  background-color: #0056b3; 
+  border-color: #004085; 
 }
+.text-danger {
+  color: #ff0000 !important; 
+}
+
+
