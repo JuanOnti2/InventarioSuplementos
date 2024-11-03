@@ -12,7 +12,7 @@
   <div id="app" class="container my-5">
     <h1 class="text-center mb-4">Inventario de Suplementos Alimenticios</h1>
 
-    <!-- Resto del formulario -->
+    
     <div class="mb-3">
       <label class="form-label">Nombre del producto:</label>
       <input v-model="newProduct.name" type="text" class="form-control" placeholder="Ej. Proteína">
@@ -27,16 +27,19 @@
     </div>
     <button @click="addProduct" class="btn btn-primary w-100">Agregar producto</button>
 
-    <!-- Mostrar productos y totales -->
+   
     <div v-if="inventory.length > 0" class="mt-4">
       <h2 class="text-center text-secondary">Productos en inventario</h2>
       <div v-for="(product, index) in inventory" :key="index" class="product-card p-3 mb-3">
         <h5>Nombre: {{ product.name }}</h5>
         <p><strong>Precio:</strong> ${{ product.unitPrice }}</p>
-        <p><strong>Cantidad:</strong> {{ product.quantity }}</p>
+       
+        <p :class="{'text-danger': product.quantity > 10}">
+          <strong>Cantidad:</strong> {{ product.quantity }}
+        </p>
         <p><strong>Total:</strong> ${{ product.totalPrice }}</p>
       </div>
-    </div>
+      
 
     <div class="totals mt-4">
       <p>Total en stock: {{ totalStock }} unidades</p>
@@ -48,3 +51,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
