@@ -1,0 +1,47 @@
+/* styles.css */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: url('imagenes/suplementos-alimenticios-principal.jpg') no-repeat center center fixed; /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+}
+
+#app {
+  position: relative; /* Asegura que el contenido esté por encima de la imagen */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para el contenido */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+}
+
+h1 {
+  color: #000dff; /* Color azul para el título */
+}
+
+.product-card {
+  background-color: #16d4de; /* Color de fondo de las tarjetas */
+  border: 1px solid #16d4de; /* Borde de las tarjetas */
+  border-radius: 0.5rem; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de las tarjetas */
+}
+
+.totals {
+  background-color: #f5f3bc; /* Fondo verde claro */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 0.5rem; /* Esquinas redondeadas */
+  margin-top: 20px; /* Margen superior */
+  font-weight: bold; /* Negrita */
+}
+
+.btn-primary {
+  background-color: #347124; /* Color del botón */
+  border-color: #f4eb4c; /* Color del borde */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Color al pasar el mouse */
+  border-color: #004085; /* Color del borde al pasar el mouse */
+}
